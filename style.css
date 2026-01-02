@@ -126,7 +126,7 @@ a {
       rgba(13, 45, 62, 0.85) 40%,
       rgba(244, 180, 26, 0.08) 100%
     ),
-    url("img/gedung1.webp");
+    url("gedung1.webp");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
