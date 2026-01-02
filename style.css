@@ -250,54 +250,7 @@ section h5 {
   margin-bottom: 1rem;
 }
 
-/* Our Values — Card Biru Tua */
 .value-card {
-  background: #0d2d3e;
-  color: white;
-  padding: 24px;
-  border-radius: 16px;
-  height: 100%;
-  text-align: center;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.value-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 6px 18px rgba(13, 45, 62, 0.4);
-}
-
-.value-card .value-icon i {
-  color: #FFC107; /* Aksen kuning sesuai preferensi kamu */
-  font-size: 2rem;
-  margin-bottom: 12px;
-}
-
-.value-card h5 {
-  font-weight: 600;
-  font-size: 1.1rem;
-  margin: 12px 0;
-}
-
-.value-card p {
-  opacity: 0.9;
-  font-size: 0.9rem;
-}
-.service-link {
-  display: inline-block;
-  color: var(--primary);
-  font-weight: 600;
-  text-decoration: none;
-}
-.service-link i {
-  margin-left: 5px;
-}
-.service-card:hover .service-link {
-  color: var(--accent);
-}
-.service-card:hover .service-link i {
-  transform: translateX(5px);
-  transition: transform 0.3s;
-}
 
 /* ================= BLOG CARD ================= */
 .blog-card {
