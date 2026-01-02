@@ -251,51 +251,37 @@ section h5 {
 }
 
 /* ================= CARD STYLING ================= */
-.value-card,
-.service-card {
-  background: white;
+/* Our Values Section */
+.value-card {
+  background: #ffffff;
+  padding: 24px 20px;
   border-radius: 16px;
-  padding: 1rem;
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
-  transition: all 0.4s ease;
+  box-shadow: 0 4px 16px rgba(13, 45, 62, 0.08);
+  transition: all 0.35s ease;
   height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   text-align: center;
-}
-.value-card:hover,
-.service-card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+  border-top: 3px solid #0d2d3e;
 }
 
-.service-icon,
-.value-icon {
-  background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%);
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 0 auto 0.75rem;
+.value-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 24px rgba(13, 45, 62, 0.15);
+  border-top-color: #FFC107;
 }
-.service-icon i,
-.value-icon i {
-  color: var(--primary);
-  font-size: 1.25rem;
+
+.value-card .value-icon i {
+  color: #0d2d3e;
+  transition: color 0.3s ease;
+}
+
+.value-card:hover .value-icon i {
+  color: #FFC107;
 }
 
 .value-card h5 {
-  font-size: 1rem;
-  margin-bottom: 0.5rem;
-}
-.value-card p {
-  font-size: 0.85rem;
-  margin: 0;
-  line-height: 1.4;
+  color: #0d2d3e;
+  margin-top: 12px;
+  font-size: 1.1rem;
 }
 
 .service-link {
