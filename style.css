@@ -250,40 +250,38 @@ section h5 {
   margin-bottom: 1rem;
 }
 
-/* ================= CARD STYLING ================= */
-/* Our Values Section */
+/* Our Values — Card Biru Tua */
 .value-card {
-  background: #ffffff;
-  padding: 24px 20px;
+  background: #0d2d3e;
+  color: white;
+  padding: 24px;
   border-radius: 16px;
-  box-shadow: 0 4px 16px rgba(13, 45, 62, 0.08);
-  transition: all 0.35s ease;
   height: 100%;
   text-align: center;
-  border-top: 3px solid #0d2d3e;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .value-card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 8px 24px rgba(13, 45, 62, 0.15);
-  border-top-color: #FFC107;
+  transform: translateY(-5px);
+  box-shadow: 0 6px 18px rgba(13, 45, 62, 0.4);
 }
 
 .value-card .value-icon i {
-  color: #0d2d3e;
-  transition: color 0.3s ease;
-}
-
-.value-card:hover .value-icon i {
-  color: #FFC107;
+  color: #FFC107; /* Aksen kuning sesuai preferensi kamu */
+  font-size: 2rem;
+  margin-bottom: 12px;
 }
 
 .value-card h5 {
-  color: #0d2d3e;
-  margin-top: 12px;
+  font-weight: 600;
   font-size: 1.1rem;
+  margin: 12px 0;
 }
 
+.value-card p {
+  opacity: 0.9;
+  font-size: 0.9rem;
+}
 .service-link {
   display: inline-block;
   color: var(--primary);
