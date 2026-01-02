@@ -133,7 +133,7 @@ a {
       rgba(13, 45, 62, 0.85) 40%,
       rgba(244, 180, 26, 0.08) 100%
     ),
-    url("gedung1.webp");
+    url("img/gedung1.webp");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -196,21 +196,20 @@ a {
 }
 
 /* ================= HERO PERSONAL IMAGE WITH BLUR EFFECT ================= */
-
 .hero-personal-image-container {
   position: relative;
   padding: 20px;
-  background: rgba(255, 255, 255, 0.1); /* Warna putih transparan */
-  backdrop-filter: blur(10px); /* Efek blur di belakang foto */
-  -webkit-backdrop-filter: blur(10px); /* Untuk Safari */
-  border-radius: 24px; /* Sudut bulat */
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 24px;
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
   overflow: hidden;
 }
 
 .hero-personal-image-container img {
   transition: transform 0.4s ease, box-shadow 0.4s ease;
-  border-radius: 16px; /* Sudut foto juga bulat */
+  border-radius: 16px;
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
 }
 
@@ -218,6 +217,7 @@ a {
   transform: scale(1.03) rotate(-1deg);
   box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
 }
+
 /* ================= ABOUT ================= */
 #about img {
   transition: transform 0.4s ease;
@@ -250,13 +250,92 @@ section h5 {
   margin-bottom: 1rem;
 }
 
+/* ================= OUR VALUES CARD ================= */
 .value-card {
+  background: var(--primary);
+  color: white;
+  padding: 32px 24px;
+  border-radius: 18px;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.value-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 24px rgba(13, 45, 62, 0.4);
+}
+
+.value-card .value-icon i {
+  color: var(--accent);
+  font-size: 2.2rem;
+}
+
+.value-card h5 {
+  font-weight: 600;
+  font-size: 1.2rem;
+  margin: 16px 0 12px;
+  color: white;
+}
+
+.value-card p {
+  opacity: 0.95;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* ================= OUR SERVICES CARD ================= */
+.service-card {
+  background: var(--primary);
+  color: white;
+  padding: 30px;
+  border-radius: 16px;
+  height: 100%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(13, 45, 62, 0.4);
+}
+
+.service-card .service-icon i {
+  color: var(--accent);
+  font-size: 2rem;
+}
+
+.service-card h5 {
+  font-weight: 600;
+  font-size: 1.25rem;
+  margin: 16px 0 12px;
+  color: white;
+}
+
+.service-card p {
+  opacity: 0.9;
+  line-height: 1.5;
+}
+
+.service-link {
+  color: var(--accent);
+  font-weight: 600;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 12px;
+}
+
+.service-link:hover {
+  text-decoration: underline;
+}
 
 /* ================= BLOG CARD ================= */
 .blog-card {
   background: white;
   border-radius: 16px;
-  overflow: visible; /* ← KUNCI: jangan hidden! */
+  overflow: visible;
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
   transition: all 0.3s ease;
 }
@@ -591,7 +670,7 @@ body.modal-open-blur-fix .hero-personal-image-container {
     background: transparent !important;
   }
   .navbar-toggler-icon {
-    background-image: url("image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='%230d2d3e' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E") !important;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='%230d2d3e' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
     width: 30px;
     height: 30px;
   }
