@@ -416,16 +416,16 @@ body.modal-open-blur-fix .hero-personal-image-container {
   background: rgba(255, 255, 255, 0.2);
 }
 
-/* ================= PROJECTS CARD — LEBIH BESAR & MENARIK ✅ ================= */
+/* ================= PROJECTS CARD — BIRU MUDA ✅ ================= */
 .project-card {
   background: #e3f2fd; /* biru muda lembut */
-  color: white;
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: var(--primary); /* teks biru tua */
+  border: 1px solid #bbdefb;
   border-radius: 12px;
   padding: 20px;
   text-align: center;
   transition: all 0.3s ease;
-  box-shadow: 0 4px 12px rgba(13, 45, 62, 0.15);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -433,26 +433,27 @@ body.modal-open-blur-fix .hero-personal-image-container {
 }
 
 .project-card:hover {
-  box-shadow: 0 8px 20px rgba(13, 45, 62, 0.3);
+  background: #d0e7f9; /* sedikit lebih gelap saat hover */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
   transform: translateY(-5px);
 }
 
-/* Gambar tetap putih background biar kontras */
+/* Gambar tetap netral */
 .project-card img {
   max-width: 100%;
   height: 80px;
   object-fit: contain;
   margin-bottom: 15px;
   border-radius: 8px;
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid #90caf9;
+  background: white;
   padding: 10px;
 }
 
-/* Judul & teks putih, aksen kuning untuk client */
+/* Judul tebal, biru tua */
 .project-card h6 {
-  font-weight: 600;
-  color: white;
+  font-weight: 700;
+  color: var(--primary);
   margin-bottom: 8px;
   font-size: 1rem;
   min-height: 2.5rem;
@@ -463,9 +464,10 @@ body.modal-open-blur-fix .hero-personal-image-container {
   text-overflow: ellipsis;
 }
 
+/* Deskripsi abu-abu gelap */
 .project-card p {
   font-size: 0.85rem;
-  color: rgba(255, 255, 255, 0.85); /* teks agak transparan */
+  color: var(--gray);
   margin: 0;
   min-height: 2.5rem;
   display: -webkit-box;
