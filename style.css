@@ -416,11 +416,7 @@ body.modal-open-blur-fix .hero-personal-image-container {
   background: rgba(255, 255, 255, 0.2);
 }
 
-/* ================= PROJECTS — TETAP RAPI, TIDAK ACACAN ✅ ================= */
-#projectsCarousel .carousel-inner {
-  padding: 20px 0;
-}
-
+/* ================= PROJECTS CARD — LEBIH BESAR & MENARIK ✅ ================= */
 .project-card {
   background: white;
   border: 1px solid #e9ecef;
@@ -434,10 +430,12 @@ body.modal-open-blur-fix .hero-personal-image-container {
   flex-direction: column;
   justify-content: space-between;
 }
+
 .project-card:hover {
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
   transform: translateY(-5px);
 }
+
 .project-card img {
   max-width: 100%;
   height: 80px;
@@ -448,6 +446,7 @@ body.modal-open-blur-fix .hero-personal-image-container {
   background: #f8f9fa;
   padding: 10px;
 }
+
 .project-card h6 {
   font-weight: 600;
   color: var(--primary);
@@ -460,6 +459,7 @@ body.modal-open-blur-fix .hero-personal-image-container {
   overflow: hidden;
   text-overflow: ellipsis;
 }
+
 .project-card p {
   font-size: 0.85rem;
   color: var(--gray);
@@ -471,7 +471,6 @@ body.modal-open-blur-fix .hero-personal-image-container {
   overflow: hidden;
   text-overflow: ellipsis;
 }
-
 /* ================= TESTIMONIALS, CONSULTATION, FOOTER — TETAP SAMA ================= */
 /* (Sudah bagus, tidak perlu diubah — aku pertahankan semua kode asli kamu di sini) */
 
