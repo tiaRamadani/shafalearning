@@ -635,6 +635,44 @@ body.modal-open-blur-fix .hero-personal-image-container {
   border-radius: 20px;
 }
 
+/* ================= OUR PROFESSIONAL ENGAGEMENTS ================= */
+.engagement-card {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  transition: all 0.3s ease;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.engagement-card:hover {
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  transform: translateY(-5px);
+}
+
+.engagement-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-bottom: 1px solid #dee2e6;
+}
+
+.engagement-card p {
+  font-weight: 600;
+  margin: 12px 0 8px;
+  font-size: 0.9rem;
+  color: var(--primary);
+}
+
+.engagement-card .text-muted {
+  font-size: 0.8rem;
+  opacity: 0.8;
+}
+
 /* CONTACT */
 .contact-list {
   list-style: none;
