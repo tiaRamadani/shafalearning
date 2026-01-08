@@ -673,6 +673,19 @@ body.modal-open-blur-fix .hero-personal-image-container {
   opacity: 0.8;
 }
 
+/* Google Review Button */
+.btn-outline-primary {
+  border-color: #0d2d3e;
+  color: #0d2d3e;
+  font-weight: 600;
+}
+.btn-outline-primary:hover {
+  background-color: #0d2d3e;
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(13, 45, 62, 0.2);
+}
+
 /* CONTACT */
 .contact-list {
   list-style: none;
