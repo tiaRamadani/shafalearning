@@ -13,7 +13,7 @@
 <!-- AOS Animation -->
 <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 <!-- Custom CSS -->
-<link rel="stylesheet" href="style.css" />s
+<link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <!-- TOP BAR -->
@@ -861,6 +861,16 @@
   $('.modal').on('hidden.bs.modal', function () {
     $('body').removeClass('modal-open-blur-fix');
   });
+
+  document.querySelectorAll('#navbarNav .nav-link').forEach(link => {
+  link.addEventListener('click', () => {
+    const navbarCollapse = document.querySelector('#navbarNav');
+    if (navbarCollapse.classList.contains('show')) {
+      // Trigger click pada tombol toggler untuk menutup
+      document.querySelector('.navbar-toggler').click();
+    }
+  });
+});
 </script>
 </body>
 </html>
