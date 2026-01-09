@@ -861,17 +861,6 @@
   $('.modal').on('hidden.bs.modal', function () {
     $('body').removeClass('modal-open-blur-fix');
   });
-
-  // Tutup mobile menu saat klik link (Bootstrap 4)
-  document.querySelectorAll('#navbarNav .nav-link').forEach(link => {
-  link.addEventListener('click', () => {
-    const navbarCollapse = document.querySelector('#navbarNav');
-    if (navbarCollapse.classList.contains('show')) {
-      // Trigger click pada tombol toggler untuk menutup
-      document.querySelector('.navbar-toggler').click();
-    }
-  });
-});
 </script>
 </body>
 </html>
