@@ -861,7 +861,8 @@
   $('.modal').on('hidden.bs.modal', function () {
     $('body').removeClass('modal-open-blur-fix');
   });
-  //navbar
+
+  // Tutup mobile menu saat klik link (Bootstrap 4)
   document.querySelectorAll('#navbarNav .nav-link').forEach(link => {
   link.addEventListener('click', () => {
     const navbarCollapse = document.querySelector('#navbarNav');
@@ -871,22 +872,6 @@
     }
   });
 });
-//navbar
- const navbarToggler = document.querySelector('.navbar-toggler');
-const navbarNav = document.querySelector('#navbarNav');
-
-navbarToggler.addEventListener('click', () => {
-  document.body.classList.toggle('menu-open');
-});
-
-// Tutup juga saat klik link
-document.querySelectorAll('#navbarNav .nav-link').forEach(link => {
-  link.addEventListener('click', () => {
-    document.body.classList.remove('menu-open');
-    // Trigger tutup menu
-    navbarToggler.click();
-  });
-}); 
 </script>
 </body>
 </html>
