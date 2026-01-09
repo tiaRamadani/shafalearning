@@ -494,12 +494,7 @@ body.modal-open-blur-fix .hero-personal-image-container {
   font-size: 0.9rem; /* Turunkan dari 1rem */
   line-height: 1.4;
   min-height: 2.5rem;
-  /* Jika tetap ingin ellipsis, biarkan ini */
-  display: -webkit-box;
-  -webkit-line-clamp: 2;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-  text-overflow: ellipsis;
+
 }
 /* Deskripsi abu-abu gelap */
 .project-card p {
